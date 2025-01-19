@@ -42,6 +42,10 @@ public abstract class Worker extends Person {
 	}
 	
     protected void resetDays() {
-        this.vacationDays = START_VACATION_DAYS;  // Reset vacation days for workers
+        // Reset dailyHours for the new month
+        for (int i = 0; i < dailyHours.length; i++) {
+            dailyHours[i] = 0;
+        }
+        // Reset vacation days, can be adjusted for managers later   
     }
 }

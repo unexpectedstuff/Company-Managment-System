@@ -2,11 +2,12 @@ import java.util.Arrays;
 
 public class Client extends Person {
 	private String companyName;
-	private double[] dailySpending = new double[30];
+	private double[] dailySpending;
 	
 	public Client(String name, String companyName) {
 		super(name);
 		this.companyName = companyName;
+		this.dailySpending = new double[30];
 	}
 	
 	public void  updateDailySpending(int day, double amount) {
@@ -23,5 +24,10 @@ public class Client extends Person {
         System.out.println("Name: " + getName());
         System.out.println("Company: " + companyName);
         System.out.println("Daily Spending: " + Arrays.toString(dailySpending));
+        //spending tracking
+        for (double spending : dailySpending) {
+            System.out.print(spending + " ");
+        }
+        System.out.println();
     }
 }
