@@ -1,4 +1,4 @@
-# Content-Managment-System
+# Company-Managment-System
 Employee and Client Management System
 
 This is a simple Java program to simulate a simple company structure using OOP principles. The system manages employees (managers and workers) and clients. It included features for tracking employee working hours, vacation days, and sick days, and managing client spending over time. Also I created methods to generate data - since this is a class assignment.
